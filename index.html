@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            max-width: 1062px;
+            width: 100%;
+            margin: auto;
+            background: url("img/background.png") no-repeat center;
+            height: 100%;
+            color: #fff;
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 24px;
+            margin-bottom: 200px;
+        }
+
+        .menu-list {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .menu-item:not(:last-child) {
+            margin-right: 63px;
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .active {
+            font-weight: bold;
+        }
+
+        .main-text {
+            font-weight: 500px;
+            font-size: 53px;
+            line-height: 62px;
+        }
+
+        .quote {
+            font-weight: 400px;
+            font-size: 18px;
+            line-height: 21px;
+            margin-left: 0px;
+            opacity: 0.7;
+        }
+
+        .button-order {
+            all: unset;
+            padding: 22px  55px;
+            background: #f6762c;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 500px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        main {
+            max-width: 500px;
+        }
+
+        header *{
+            display: inline-block;
+        }
+
+        .menu-list *{
+            /* background-color: rgb(52, 52, 52); */
+            display: flex;
+            margin-left: 20%; 
+        }
+    
+        .menu-item *{
+            vertical-align: text-top;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="img/logo.png">
+        </a>
+        <div class="navbar">
+            <ul class="menu-list">
+                <li class="menu-item active"><a href="#">ГЛАВНАЯ</a></li>
+                <li class="menu-item"><a href="#">ОТЗЫВЫ</a></li>
+                <li class="menu-item"><a href="#">ЦЕНЫ</a></li>
+                <li class="menu-item"><a href="#">КОМПАНИЯ</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <p class="main-text"> Быстрая еда для мгновенного голода</p>
+        <blockquote class="quote">
+            "Я не знаю, какой ещё надо сказать комплимент этому гамбургеру, но мне он показался 
+            самым вкусным из всех гамбургеров, которые я когда-либо пробовал."
+        </blockquote>
+        <button class="button-order">ЗАКАЗАТЬ</button>
+    </main>
+</body>
+</html>
